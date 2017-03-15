@@ -1,6 +1,10 @@
 ######################################################################################
 ## using pytorch in R via R reticulate
 
+library(reticulate)
+
+## make sure pytorch is installed in your python environment
+
 ## just took this logistic regression example from a pytorch tutorial on
 ## https://github.com/yunjey/pytorch-tutorial/blob/master/tutorials/02%20-%20Logistic%20Regression/main.py#L35-L42
 
