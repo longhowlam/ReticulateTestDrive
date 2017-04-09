@@ -4,8 +4,8 @@ library(reticulate)
 library(dplyr)
 
 
-### we need to switch to python 27 because the pattern packages supports only python27 and not python3
-### In anaconda I have created a python 2.7 environment woth the pateern.nl package
+### we need to switch to python 2.7 because the pattern packages supports only python27 and not python3
+### In anaconda I have created a python 2.7 environment with the pattern.nl package
 ### In R We can use this environment 
 
 use_condaenv("python27")
@@ -22,7 +22,7 @@ pattern.nl$singularize("huizen")
 
 
 ### call the sentiment function
-out = pattern.nl$sentiment('ALS is een zeer vreselijk ziekte')
+out = pattern.nl$sentiment('ALS is een zeer vreselijke ziekte')
 
 ## out is still a 'python object'
 ## its assement object contain a polarity score between -1 and 1 and a subjectivity score (0,1)
